@@ -27,45 +27,28 @@
 
   </div>
 
+  <script>
 
-<script>
+    document.getElementById("loginForm").addEventListener("submit", function(e) {
 
-document.getElementById("loginForm").addEventListener("submit", async function(e){
+      e.preventDefault();
 
-e.preventDefault();
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
 
-let email = document.getElementById("email").value;
-let password = document.getElementById("password").value;
+      // Simple frontend validation
+      if (email === "" || password === "") {
+        alert("Please fill all fields.");
+        return;
+      }
 
-let response = await fetch("http://localhost:3000/login",{
+      alert("Login Successful 🎉");
 
-method:"POST",
+      window.location.href = "home.html";
 
-headers:{
-"Content-Type":"application/json"
-},
+    });
 
-body:JSON.stringify({username:email,password:password})
-
-});
-
-let result = await response.text();
-
-if(result === "Login successful"){
-
-alert("Login Successful");
-
-window.location.href="home.html";
-
-}else{
-
-alert("Invalid email or password");
-
-}
-
-});
-
-</script>
+  </script>
 
 </body>
 </html>
