@@ -1,0 +1,74 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #5C4033;  /* warm brown background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Centered Logo Section */
+.logo-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.logo-centered {
+  width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Tagline */
+.tagline {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff8dc;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+  color: #f2e6d9;
+  font-size: 0.9rem;
+}
+
+/* Arrow styling */
+.arrow-container {
+  margin-top: 30px;
+}
+
+.arrow {
+  font-size: 2.5rem;
+  color: #000;                /* black arrow */
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s;
+  background: #fff8dc;        /* light cream circle behind arrow */
+  border-radius: 50%;
+  padding: 10px 20px;
+}
+
+.arrow:hover {
+  transform: translateY(5px);
+  background: #e0cba8;
+}
+

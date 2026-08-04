@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Recipes | AC Flavors</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="cuisine.css" />
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function searchDish() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let dishes = document.getElementsByClassName("dish");
+
+      for (let i = 0; i < dishes.length; i++) {
+        let dishName = dishes[i].querySelector("h3").innerText.toLowerCase();
+
+        if (dishName.includes(input)) {
+          dishes[i].style.display = "";
+        } else {
+          dishes[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- BACK ARROW -->
+  <div class="back-arrow" onclick="goBack()">←</div>
+
+  <header>
+    <h1>Indian Cuisine</h1>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-box">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search dishes..."
+      onkeyup="searchDish()"
+    />
+  </div>
+
+  <!-- DISHES -->
+  <section class="dish-container">
+
+    <div class="dish">
+      <img src="Aloo-Tikki.jpg" alt="Aloo Tikki" />
+      <h3>Aloo Tikki</h3>
+      <div class="buttons">
+        <a href="recipe-aloo-tikki.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=7kXjDL1o5lI" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="dhokla.jpeg" alt="Dhokla" />
+      <h3>Dhokla</h3>
+      <div class="buttons">
+        <a href="recipe-dhokla.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=gZyxjz8tK0Y" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="ch.jpg" alt="Chole Bhature" />
+      <h3>Chole Bhature</h3>
+      <div class="buttons">
+        <a href="recipe-chole-bhature.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=vA8gkzlb0nM" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="mp.jpg" alt="Matar Paneer" />
+      <h3>Matar Paneer</h3>
+      <div class="buttons">
+        <a href="recipe-matar-paneer.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=ue4YpJYQp4M" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="pp.jpg" alt="Palak Paneer" />
+      <h3>Palak Paneer</h3>
+      <div class="buttons">
+        <a href="recipe-palak-paneer.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=VvU6-dHq_eE" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="dosa.jpg" alt="Dosa" />
+      <h3>Dosa</h3>
+      <div class="buttons">
+        <a href="recipe-dosa.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=1NQd8l9DgJw" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="jalebi.jpg" alt="Jalebi" />
+      <h3>Jalebi</h3>
+      <div class="buttons">
+        <a href="recipe-jalebi.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=lnoR-88XKOY" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="samosa.jpeg" alt="Samosa" />
+      <h3>Samosa</h3>
+      <div class="buttons">
+        <a href="recipe-samosa.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=ZsZy8nEzpBo" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="gulab jamun.jpeg" alt="Gulab Jamun" />
+      <h3>Gulab Jamun</h3>
+      <div class="buttons">
+        <a href="recipe-gulab-jamun.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=xM_GW0c9x_w" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="bi.jpg" alt="Veg Biryani" />
+      <h3>Veg Biryani</h3>
+      <div class="buttons">
+        <a href="recipe-veg-biryani.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=a7S6xI79fJg" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="sa.jpg" alt="Saag" />
+      <h3>Saag</h3>
+      <div class="buttons">
+        <a href="recipe-saag.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=Fge5ye-xDA4" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="punjabi-rajma.jpg" alt="Rajma" />
+      <h3>Rajma</h3>
+      <div class="buttons">
+        <a href="recipe-rajma.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=suZq-B6lHfA" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="lc.jpg" alt="Litti Chokha" />
+      <h3>Litti Chokha</h3>
+      <div class="buttons">
+        <a href="recipe-litti-chokha.html">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=13OEZKpOcdU" target="_blank">Link</a>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 AC Flavors | Made with ❤️ by Ayushi</p>
+  </footer>
+
+</body>
+</html>

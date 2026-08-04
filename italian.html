@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Italian Recipes | AC Flavors</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="cuisine.css" />
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function searchDish() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let dishes = document.getElementsByClassName("dish");
+
+      for (let i = 0; i < dishes.length; i++) {
+        let dishName = dishes[i].querySelector("h3").innerText.toLowerCase();
+        dishes[i].style.display = dishName.includes(input) ? "" : "none";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- BACK ARROW -->
+  <div class="back-arrow" onclick="goBack()">←</div>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Italian Cuisine</h1>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-box">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search dishes..."
+      onkeyup="searchDish()"
+    />
+  </div>
+
+  <!-- DISHES -->
+  <section class="dish-container">
+
+    <div class="dish">
+      <img src="Margherita Pizza.jpg" alt="Margherita Pizza" />
+      <h3>Margherita Pizza</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=3pBKw8uVdDE" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Pasta carbonara.jpg" alt="Pasta Carbonara" />
+      <h3>Pasta Carbonara</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=3AAdKl1UYZs" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Lasagna.jpg" alt="Lasagna" />
+      <h3>Lasagna</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=NQW8NElM6bU" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Bruschetta.jpg" alt="Bruschetta" />
+      <h3>Bruschetta</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=nuhcpN7yqZM" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Fettuccine Alfredo.jpg" alt="Fettuccine Alfredo" />
+      <h3>Fettuccine Alfredo</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=R5u5fYfM35M" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="penne Arrabbiata.jpg" alt="Penne Arrabbiata" />
+      <h3>Penne Arrabbiata</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=G7HjH8W5c2U" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Tiramisu.jpg" alt="Tiramisu" />
+      <h3>Tiramisu</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=6TEcydMcb9Y" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Minestrone Soup.jpg" alt="Minestrone Soup" />
+      <h3>Minestrone Soup</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=TFy2sw9VNVk" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Caprese Salad.jpg" alt="Caprese Salad" />
+      <h3>Caprese Salad</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=mNUx1X5SxLk" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="Risotto.jpg" alt="Risotto Milanese" />
+      <h3>Risotto Milanese</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=jvM4OZ3pAb0" target="_blank">Link</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 AC Flavors | Made with ❤️ by Ayushi</p>
+  </footer>
+
+</body>
+</html>
+

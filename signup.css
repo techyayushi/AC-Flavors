@@ -1,0 +1,71 @@
+/* Background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #5C4033, #3e2723);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card */
+.signup-container {
+  background: #fff8dc;
+  padding: 35px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+.signup-container h2 {
+  margin-bottom: 10px;
+  color: #5C4033;
+}
+
+/* Text */
+.signup-container p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Inputs */
+.signup-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Button */
+.signup-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5C4033;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover */
+.signup-container button:hover {
+  background-color: #4a3229;
+}
+
+/* Login link */
+.login-text {
+  margin-top: 10px;
+}
+
+.login-text a {
+  color: #5C4033;
+  text-decoration: none;
+  font-weight: bold;
+}

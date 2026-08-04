@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Continental Recipes | AC Flavors</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="cuisine.css" />
+
+  <!-- JAVASCRIPT -->
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+
+    function searchDish() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let dishes = document.getElementsByClassName("dish");
+
+      for (let i = 0; i < dishes.length; i++) {
+        let dishName = dishes[i].querySelector("h3").innerText.toLowerCase();
+        dishes[i].style.display = dishName.includes(input) ? "" : "none";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- BACK ARROW -->
+  <div class="back-arrow" onclick="goBack()">←</div>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Continental Cuisine</h1>
+  </header>
+
+  <!-- SEARCH BAR -->
+  <div class="search-box">
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search dishes..."
+      onkeyup="searchDish()"
+    />
+  </div>
+
+  <!-- DISHES -->
+  <section class="dish-container">
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Grilled_chicken_breast.jpg" alt="Grilled Chicken">
+      <h3>Grilled Chicken</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=RQp4OQH8L6A" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Steak_dinner.jpg" alt="Beef Steak">
+      <h3>Beef Steak</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=9r4G7fK2Xko" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Roast_Vegetables.jpg" alt="Roasted Vegetables">
+      <h3>Roasted Vegetables</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=37r3uf2GhmE" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Caesar_Salad_%28II%29.jpg" alt="Caesar Salad">
+      <h3>Caesar Salad</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=Flk6cXWQcoQ" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Fish_and_chips_black_background.jpg" alt="Fish and Chips">
+      <h3>Fish & Chips</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=AHl7gl5Nf5c" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f5/Baked_potato_with_toppings.jpg" alt="Baked Potato">
+      <h3>Baked Potato</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=xtFr9nKM4M4" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Vegetable_Soup.jpg" alt="Vegetable Soup">
+      <h3>Vegetable Soup</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=GwcQqX5AZDk" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Chicken_Pot_Pie.jpg" alt="Chicken Pot Pie">
+      <h3>Chicken Pot Pie</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=lQU0m3c9Xpw" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Pancakes_with_syrup.jpg" alt="Pancakes">
+      <h3>Pancakes</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=0zS9WB7Q3wE" target="_blank">Link</a>
+      </div>
+    </div>
+
+    <div class="dish">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Apple_Pie.jpg" alt="Apple Pie">
+      <h3>Apple Pie</h3>
+      <div class="buttons">
+        <a href="#">Recipe</a>
+        <a href="https://www.youtube.com/watch?v=s4kL6j_S3Xw" target="_blank">Link</a>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>

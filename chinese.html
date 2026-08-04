@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Chinese Recipes | AC Flavors</title><link rel="stylesheet" href="cuisine.css"></head>
+<script>
+  function goBack() {
+    window.history.back();
+  }
+
+  function goBack() {
+      window.history.back();
+    }
+
+    function searchDish() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let dishes = document.getElementsByClassName("dish");
+
+      for (let i = 0; i < dishes.length; i++) {
+        let dishName = dishes[i].querySelector("h3").innerText.toLowerCase();
+
+        if (dishName.includes(input)) {
+          dishes[i].style.display = "";
+        } else {
+          dishes[i].style.display = "none";
+        }
+      }
+    }
+</script>
+
+<body>
+    <div class="back-arrow" onclick="goBack()">←</div>
+
+    
+    <header><h1>Chinese Cuisine</h1></header>
+<section class="dish-container">
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Chow_mein.jpg"><h3>Chow Mein</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=L9h0IezsOHk" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Fried_rice.jpg"><h3>Fried Rice</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=jDWx4t9Ru4A" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Veg_Manchurian.jpg"><h3>Veg Manchurian</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=ssA2cqLh_J4" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Spring_rolls.jpg"><h3>Spring Rolls</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=Qw_kvHdUBp0" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Hot_and_Sour_Soup.jpg"><h3>Hot & Sour Soup</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=0RmjnbTxvfw" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Schezwan_Noodles.jpg"><h3>Schezwan Noodles</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=B7adTzHYi28" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Chilli_Paneer.jpg"><h3>Chilli Paneer</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=_c3EVf5JwX4" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Dumplings_in_a_bamboo_steamer.jpg"><h3>Dumplings</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=9J8g7rIuIYY" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Chicken_lollipop.jpg"><h3>Chicken Lollipop</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=a9W8NYtIeeQ" target="_blank">Link</a></div></div>
+<div class="dish"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Chilli_Garlic_Noodles.jpg"><h3>Chilli Garlic Noodles</h3><div class="buttons"><a href="#">Recipe</a><a href="https://www.youtube.com/watch?v=V_B1J6P1vS4" target="_blank">Link</a></div></div>
+</section></body></html>
